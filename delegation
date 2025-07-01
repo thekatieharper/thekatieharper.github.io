@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delegation Mistakes — Katie Harper</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      background-color: #fff;
+      color: #111;
+      margin: 0;
+      padding: 4rem 1rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      font-size: 1.1rem;
+      margin-top: 2rem;
+      font-weight: 400;
+    }
+    p {
+      margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Delegation Mistakes</h1>
+  
+  <p>Once or twice a year I’ll go through a phase of extreme delegation to cope with the demands of startup life. I make long lists of my worries — responsibilities, systems, activities, even relationships — and ruthlessly brainstorm how to hand them off to someone else. Channeling Marie Kondo, I insist that I don’t have to do anything that doesn’t bring me joy. Unfortunately, that’s not how life works, and my master plan of delegation fails.</p>
+
+  <p>Still, delegation is crucial to managing well. If I can’t get off of the hamster wheel of doing, I may miss the big picture. Here are the mistakes I’m trying not to repeat.</p>
+
+  <h2>Delaying delegation too long</h2>
+  <p>My responsibility purge is usually triggered by extreme overwhelm. If I’m not careful, I will listen to the overwhelm telling me that delegating will be more work than doing the work myself. That may initially be true, but it will also mean that I can never get out from under my own task list to see better ways to do something or to grow. To determine whether a task may be a good handoff candidate, I’m asking the following:</p>
+
+  <p><strong>Does the task consume a disproportionate amount of energy?</strong> Every Thursday, I need to duplicate and distribute a team presentation. It seems too insignificant to put on my to-do list every week, so I rely on myself to remember it unprompted each Thursday afternoon. I could put a calendar reminder for it, but then someone will schedule a meeting during that time, and I’ll miss the reminder. I clearly spend too much energy thinking about this and need to hand it off.</p>
+
+  <p><strong>Do I actively dread the task?</strong> Laundry is my nemesis, and I will strategically plan outfits to avoid doing it for as long as possible. It wasn’t until Dan suggested having someone else do it that I first glimpsed freedom. In fact, that someone else may even do a better job and get joy from it. I waited so long to consider delegating this one that I almost forgot that escape is possible.</p>
+
+  <p><strong>Does the task specifically require my voice, face, writing, or knowledge?</strong> Some days at an early stage company can feel like everything is waiting on me. Truthfully, very few tasks probably do, but that’s not what my ego wants to hear. Vacation days are a great reminder that the company can survive without me. When I start to dread a day off, I know that I’m handling too much.</p>
+
+  <h2>Handing off the wrong tasks</h2>
+  <p>In a typical week, I check out five or so books from the library. When I first hired an assistant, I created an elaborate system for them to log into my accounts, pull books from my reading list, and send them to my Kindle or local library branch. My goal was an endless stream of interesting reading. The result was far from that.</p>
+
+  <p>I became overwhelmed by the pressure to read and unhappy with the mix of books being selected (even though they were pre-selected by me!). Reading became a chore rather than a relaxing pastime. I realized that I craved books related to the events of the week, and I missed perusing the shelves myself. I had handed off something I loved for the sake of creating more time to do the things I love.</p>
+
+  <p>Startups pull us in multiple directions, and it can be hard to remember what we love about our jobs. Be clear about why you’re delegating and hold on to the activities that bring you joy. A shorter to-do list is only wonderful if the remaining items don’t make you want to quit your job.</p>
+
+  <h2>Dictating process rather than outcome</h2>
+  <p>Another hard concept for my ego to grasp: my way isn’t the only way. So I let my assistant set up appointments for me however she deemed fit. When I looked back through my sent mail, I noticed that she had started each of her emails with “Good day to you.” Not what I would have said, but she still achieved the outcome.</p>
+
+  <p>Delegation requires trust, and trust is earned. Start off with small outcomes and work towards higher stake assignments. You’ve made hires for a reason, so use their brainpower and past experience to figure out the “how” for themselves. Letting someone else think through a process and execute on it means the method may be different from mine, and we both end up learning something.</p>
+
+  <p>Put in the time to delegate the right tasks to the right people before you become overwhelmed. Then they can write articles like this for you. (Or so says my delegation fantasy.)</p>
+</body>
+</html>
