@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creating Company Culture</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      background-color: #fff;
+      color: #111;
+      margin: 0;
+      padding: 4rem 1rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      font-size: 1.1rem;
+      margin-top: 2rem;
+      font-weight: 400;
+    }
+    p {
+      margin: 1rem 0;
+    }
+    ul {
+      padding-left: 1.2rem;
+      margin: 0.5rem 0;
+    }
+    blockquote {
+      margin: 2rem 0;
+      font-style: italic;
+      color: #444;
+      border-left: 4px solid #ddd;
+      padding-left: 1rem;
+    }
+    .date {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Creating Company Culture</h1>
+
+  <p>Kard is in the middle of a hiring spree, and the process has made me think about who we’re becoming as a company. At eleven people, we are too big to get away without defining our company culture but not yet large enough to be hiring a Head of People Ops. After jealously ogling the <a href="https://otiswealth.notion.site/Careers-715284aa50454d778de46220e3068df4" target="_blank">career page</a> the Otis team has built, I started thinking about how to bring that clarity to Kard’s values and process. It’s still very much a work in progress, but here are some questions that have helped me.</p>
+
+  <h2>What’s our ideal culture?</h2>
+  <p>Put more broadly, what do you want your team to be known for? How do you define yourselves and what are your common threads? Company culture can be what ties otherwise incredibly different individuals together in pursuit of a common mission.</p>
+
+  <p>Good culture to me means good process. I envision clearly defined values and systems that work those values into everything we do, from client interactions to interviews. The confidence of Otis’ page resonated with me; they know who they are and who they want to attract. And their entire machine is built around executing on those desires.</p>
+
+  <p>Feeling unsure of your ideals? Start by thinking about how you’d want your team to respond in the following scenarios.</p>
+  <ul>
+    <li>An unhappy customer is asking for a refund</li>
+    <li>An applicant is turned down after the final round interview</li>
+    <li>A teammate needs extra help while caring for a sick child at home</li>
+    <li>The team exceeded their annual goals ahead of time</li>
+    <li>A promised deadline requires weekend work</li>
+    <li>Significant conflict arises during an internal meeting</li>
+  </ul>
+
+  <p>Were there common themes among your responses? Did other employees have different answers? Use the feedback to jumpstart a discussion on company values and how to articulate them within each scenario. Once you have your value list, take a look at how you’re doing now.</p>
+
+  <h2>What’s our current culture?</h2>
+  <p>When the company is small, culture may be largely intangible and heavily based on the personalities of early hires. Because every new employee will change the company’s overall culture, it’s good to recognize your starting point. Investigate the present culture by asking the following questions, and pay special attention to fresh perspectives; new hires will have the clearest view of your culture when everything still feels unfamiliar.</p>
+
+  <ul>
+    <li>What’s communication like within the team?</li>
+    <li>How do we run meetings?</li>
+    <li>Which fun activities is the team drawn to?</li>
+    <li>How do we handle internal conflict and difficult conversations?</li>
+    <li>What are our most active Slack channels?</li>
+    <li>How do we talk about the company when interviewing applicants?</li>
+    <li>What do we consider good work and how do we praise it?</li>
+    <li>Which milestones do we acknowledge and how do we celebrate them?</li>
+    <li>How well does the team know one another?</li>
+    <li>How are positions titled and how often do they change?</li>
+  </ul>
+
+  <h2>How far off are we?</h2>
+  <p>Truth time: are you already close to your ideal or is there work to be done? Even if company culture is in a good place now, Ben Horowitz notes that it “is not a mission statement; you can’t just set it up and have it last forever.” (He has many more great thoughts in his book <em>What You Do Is Who You Are</em>.)</p>
+
+  <p>Values in hand, systematically investigate each aspect of your company to integrate them. Are there certain areas that are better representing your culture? As I’m working through the below list myself, I’m prioritizing the high traffic touchpoints, such as team meetings and recruiting, and paying special attention to opportunities for first impressions. For a fuller list of aspects to consider, check out <a href="https://contributors.free.technology/" target="_blank">Status’ People Ops page</a>.</p>
+
+  <h3>Internal</h3>
+  <ul>
+    <li><strong>Traditions:</strong> What recurring events do we have on a weekly, monthly, or quarterly basis? How does the team have fun together? What kind of swag do we give employees? Do we do anything for them on their work anniversaries or birthdays?</li>
+    <li><strong>Communication:</strong> How do we talk to one another? Do we have a shared vernacular, perhaps because we have all read the same book? Are there cliques within the team? How do we disagree with one another?</li>
+    <li><strong>HR processes:</strong> Are values a part of our onboarding and offboarding processes? How about our 1-1s and employee reviews? Are our processes clearly visible and are we actually following them?</li>
+    <li><strong>Compensation:</strong> Are our benefits adequately supporting employees in the pursuit of our values (e.g. if constant learning is important, consider a personal learning budget)? Do our pay packages and policies represent our ideals?</li>
+  </ul>
+
+  <h3>External</h3>
+  <ul>
+    <li><strong>Marketing:</strong> How do we write about ourselves on our website or on LinkedIn? Is this an accurate reflection of how we communicate internally?</li>
+    <li><strong>Recruiting:</strong> Are we embodying our values in our interactions with potential employees? How are we incorporating personality fit into our candidate grading process, and are we ever compromising those scores for other factors (e.g. past experience with a competitor)?</li>
+    <li><strong>Customer relationships:</strong> Are we treating customers with the traits we value? Are we optimizing for efficiency as we scale at the expense of customer experience?</li>
+  </ul>
+
+  <h2>How do we manage this going forward?</h2>
+  <p>Company culture is not as simple as an annual checklist. Let it go unmonitored for too long, and it will become messy and overgrown like an untended garden. But who is responsible for company culture? To some extent, everyone. Each person you hire will represent your brand, and the accepted culture will permeate through every interaction.</p>
+
+  <p>Values naturally flow from leadership, as employees will pay particular attention to the actions of the executives. Define your cultural guardrails early, even if the team is still small. The CEO will likely own the vision to start, but this can be transitioned to a <a href="https://buffer.com/resources/people-team/" target="_blank">People Ops/HR hire</a>, typically around the 40–50 employee mark.</p>
+
+  <p>Revisit your values and processes before there are problem spots. Consider the frequency of the interaction and build natural feedback loops. For instance, every employee will go through onboarding, and it’s formative to their early impressions of the company. Do a postmortem with each new hire a few weeks after onboarding, questioning whether the company is what the employee expected and if the beginning weeks have exemplified the desired values.</p>
+
+  <blockquote>
+    “Because your culture is how your company makes decisions when you’re not there. It’s the set of assumptions your employees use to resolve the problems they face every day. It’s how they behave when no one is looking. If you don’t methodically set your culture, then two-thirds of it will end up being accidental, and the rest will be a mistake.”<br>
+    — Ben Horowitz, <em>What You Do Is Who You Are</em>
+  </blockquote>
+
+  <p>Take the time to define your culture, or else it will get defined without you.</p>
+  <p class="date">Originally published in February 2021</p>
+</body>
+</html>
