@@ -1,12 +1,12 @@
-/* 1. Load EB Garamond (Regular, Italic, Bold) */
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* 1. Load Source Serif 4 */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap');
 
 /* 2. Global Styles */
 body {
-    font-family: 'EB Garamond', serif;
-    font-size: 20px; /* Garamond is naturally smaller/finer, so we bump the size up */
-    line-height: 1.5; /* Slightly tighter line-height works well for Garamond */
-    color: #222;      
+    font-family: 'Source Serif 4', serif;
+    font-size: 18px; /* A happy medium size */
+    line-height: 1.6;
+    color: #222;
     
     margin: 0 auto; 
     padding: 4rem 1rem;
@@ -15,20 +15,21 @@ body {
 
 /* 3. Typography */
 h1 {
-    font-size: 2rem; /* Larger headers to match the elegance */
-    font-weight: 400; /* Garamond looks great in regular weight headers */
+    font-size: 1.75rem;
+    font-weight: 600; 
     margin-bottom: 2rem;
+    letter-spacing: -0.5px; /* Tightens the headline slightly for a cleaner look */
 }
 
 h2 {
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     margin-top: 2rem;
-    font-weight: 400; 
-    font-style: italic; /* A nice touch: Italic subheaders look very "editorial" */
+    font-weight: 600; 
+    color: #444; /* Slightly lighter header color looks very modern */
 }
 
 p {
-    margin: 1rem 0;
+    margin: 1.1rem 0;
 }
 
 ul {
@@ -39,18 +40,20 @@ ul {
 
 ul li {
     margin-bottom: 0.75rem;
+    padding-left: 0.5rem; /* Adds a little space between bullet and text */
 }
 
 /* 4. Links */
 a {
-    color: #111;
-    font-weight: 700;
-    text-decoration: none;
-    border-bottom: 1px solid #111; /* A thin underline looks classier than default */
+    color: #000;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 1px; /* Makes the underline thin and crisp */
+    text-underline-offset: 2px;     /* Pushes the line down slightly so it doesn't cut letters */
     transition: color 0.2s ease;
 }
 
 a:hover {
     color: #555;
-    border-color: #555;
+    text-decoration-color: #555;
 }
