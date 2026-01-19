@@ -1,13 +1,56 @@
+/* 1. Load Noto Serif */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/* 2. Global Styles & Layout */
 body {
-    font-family: 'Noto Serif', serif;
-    line-height: 1.6; /* Essential for readability with Noto */
-    color: #333;      /* Softens the text slightly against white backgrounds */
-    margin: 0;
-    padding: 20px;    
+    font-family: 'Noto Serif', serif; /* The new font */
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #111;
+    
+    /* This keeps your content centered and readable */
+    margin: 0 auto; 
+    padding: 4rem 1rem;
+    max-width: 700px; 
 }
 
-h1, h2, h3 {
-    font-weight: 700;
+/* 3. Typography & Elements */
+h1 {
+    font-size: 1.5rem;
+    font-weight: 700; /* Bold looks better for Serif headers */
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    font-weight: 700; 
+}
+
+p {
+    margin: 1rem 0;
+}
+
+ul {
+    margin-left: 1.2rem;
+    padding-left: 0;
+    margin-bottom: 1.5rem;
+}
+
+ul li {
+    margin-bottom: 0.75rem;
+}
+
+/* 4. Links */
+a {
+    color: #111;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #0070f3;
+    text-decoration: underline;
 }
