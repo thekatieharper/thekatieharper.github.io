@@ -1,31 +1,30 @@
-/* 1. Load Noto Serif */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* 1. Load EB Garamond (Regular, Italic, Bold) */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-/* 2. Global Styles & Layout */
+/* 2. Global Styles */
 body {
-    font-family: 'Noto Serif', serif; /* The new font */
-    font-size: 16px;
-    line-height: 1.6;
-    background-color: #fff;
-    color: #111;
+    font-family: 'EB Garamond', serif;
+    font-size: 20px; /* Garamond is naturally smaller/finer, so we bump the size up */
+    line-height: 1.5; /* Slightly tighter line-height works well for Garamond */
+    color: #222;      
     
-    /* This keeps your content centered and readable */
     margin: 0 auto; 
     padding: 4rem 1rem;
     max-width: 700px; 
 }
 
-/* 3. Typography & Elements */
+/* 3. Typography */
 h1 {
-    font-size: 1.5rem;
-    font-weight: 700; /* Bold looks better for Serif headers */
+    font-size: 2rem; /* Larger headers to match the elegance */
+    font-weight: 400; /* Garamond looks great in regular weight headers */
     margin-bottom: 2rem;
 }
 
 h2 {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     margin-top: 2rem;
-    font-weight: 700; 
+    font-weight: 400; 
+    font-style: italic; /* A nice touch: Italic subheaders look very "editorial" */
 }
 
 p {
@@ -45,12 +44,13 @@ ul li {
 /* 4. Links */
 a {
     color: #111;
-    font-weight: bold;
+    font-weight: 700;
     text-decoration: none;
+    border-bottom: 1px solid #111; /* A thin underline looks classier than default */
     transition: color 0.2s ease;
 }
 
 a:hover {
-    color: #0070f3;
-    text-decoration: underline;
+    color: #555;
+    border-color: #555;
 }
