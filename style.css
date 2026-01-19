@@ -47,13 +47,17 @@ ul li {
 a {
     color: #000;
     font-weight: 600;
-    text-decoration: underline;
-    text-decoration-thickness: 1px; /* Makes the underline thin and crisp */
-    text-underline-offset: 2px;     /* Pushes the line down slightly so it doesn't cut letters */
+    text-decoration: none;
     transition: color 0.2s ease;
 }
 
 a:hover {
     color: #555;
     text-decoration-color: #555;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #e5e5e5; 
+    margin: 3rem 0;
 }
