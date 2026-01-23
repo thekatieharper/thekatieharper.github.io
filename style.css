@@ -11,6 +11,8 @@ body {
     margin: 0 auto; 
     padding: 4rem 1rem;
     max-width: 700px; 
+    background-color: #FDFBF7; /* "Isabelline" - a very light, warm cream */
+    color: #333333;
 }
 
 /* 3. Typography */
