@@ -1,147 +1,70 @@
-/* Base styles */
+/* Lora font - modern serif, balanced, readable */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: 'Lora', Georgia, serif;
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 0 20px;
     line-height: 1.6;
+    background: #faf8f5;
     color: #333;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #fff;
 }
 
-.container {
-    max-width: 100%;
-}
-
-/* Typography */
-h1 {
-    font-size: 2em;
-    margin-bottom: 0.5em;
-    font-weight: 600;
-}
-
-h2 {
-    font-size: 1.5em;
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-    font-weight: 600;
-}
-
-h3 {
-    font-size: 1.2em;
-    margin-top: 1em;
-    margin-bottom: 0.3em;
-    font-weight: 600;
-}
-
-p {
-    margin-bottom: 1em;
-}
-
-/* Links */
+/* Links are bold, not blue */
 a {
-    color: #0066cc;
+    color: inherit;
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-/* Horizontal rules */
-hr {
-    border: 0;
-    border-top: 1px solid #ddd;
-    margin: 2em 0;
+/* Keep resource sections simple */
+.resource-item {
+    margin-bottom: 1.5em;
 }
 
-/* Last updated timestamp */
-.last-updated {
+.resource-item h3 {
+    margin-bottom: 0.2em;
+    font-weight: normal;
+}
+
+.resource-item h3 a {
+    font-weight: bold;
+}
+
+.resource-item p {
+    margin-top: 0;
     color: #666;
-    font-size: 0.9em;
-    margin-top: -0.5em;
 }
 
-/* Resource grid for category cards */
+/* Simple category grid - minimal styling */
 .resource-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 1.5em;
     margin: 2em 0;
 }
 
 .resource-category {
-    padding: 1.5em;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    transition: border-color 0.2s;
-}
-
-.resource-category:hover {
-    border-color: #0066cc;
+    margin-bottom: 1.5em;
 }
 
 .resource-category h3 {
-    margin-top: 0;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.3em;
+    font-weight: normal;
 }
 
 .resource-category h3 a {
-    color: #333;
+    font-weight: bold;
 }
 
 .resource-category p {
-    margin-bottom: 0;
-    color: #666;
-    font-size: 0.9em;
-}
-
-/* Resource list for individual items */
-.resource-list {
-    margin: 2em 0;
-}
-
-.resource-item {
-    margin-bottom: 2em;
-    padding-bottom: 2em;
-    border-bottom: 1px solid #eee;
-}
-
-.resource-item:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
-.resource-item h3 {
-    margin-top: 0;
-    margin-bottom: 0.3em;
-}
-
-.resource-item h3 a {
-    color: #0066cc;
-}
-
-.resource-item p {
     margin: 0;
     color: #666;
 }
 
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-    body {
-        padding: 15px;
-    }
-    
-    h1 {
-        font-size: 1.75em;
-    }
-    
-    h2 {
-        font-size: 1.3em;
-    }
-    
-    .resource-grid {
-        grid-template-columns: 1fr;
-        gap: 1em;
-    }
+.last-updated {
+    color: #999;
+    font-style: italic;
 }
