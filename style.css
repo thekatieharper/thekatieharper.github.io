@@ -22,6 +22,29 @@ a:hover {
     text-decoration: underline;
 }
 
+/* More breathing room */
+p {
+    margin-bottom: 1.5em;
+}
+
+h2 {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+h3 {
+    margin-top: 1.5em;
+    margin-bottom: 0.6em;
+}
+
+ul {
+    margin-bottom: 1.5em;
+}
+
+li {
+    margin-bottom: 0.8em;
+}
+
 /* Keep resource sections simple */
 .resource-item {
     margin-bottom: 1.5em;
