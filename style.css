@@ -1,5 +1,13 @@
-/* Lora font - modern serif, balanced, readable */
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&display=swap');
+/* Lora for body, JetBrains Mono for the name / section labels */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@500;700&display=swap');
+
+:root {
+    --navy:  #132949;
+    --brick: #be533f;
+    --muted: #717070;
+    --rule:  #cdcbc9;
+    --mono:  'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+}
 
 body {
     font-family: 'Lora', Georgia, serif;
@@ -10,84 +18,193 @@ body {
     background: #faf8f5;
     color: #333;
 }
-
 /* Links are underlined, not bold */
 a {
     color: inherit;
     text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    text-decoration-color: var(--rule);
     font-weight: normal;
 }
-
 a:hover {
     opacity: 0.7;
+    text-decoration-color: currentColor;
 }
-
+a:focus-visible {
+    outline: 2px solid var(--brick);
+    outline-offset: 3px;
+}
 /* More breathing room */
 p {
     margin-bottom: 1.5em;
 }
-
 h2 {
     margin-top: 2em;
     margin-bottom: 1em;
 }
-
 h3 {
     margin-top: 1.5em;
     margin-bottom: 0.6em;
 }
-
 ul {
     margin-bottom: 1.5em;
 }
-
 li {
     margin-bottom: 0.8em;
 }
-
+hr {
+    border: 0;
+    border-top: 1px solid var(--rule);
+    margin: 44px 0;
+}
 /* Keep resource sections simple */
 .resource-item {
     margin-bottom: 1.5em;
 }
-
 .resource-item h3 {
     margin-bottom: 0.2em;
     font-weight: normal;
 }
-
 .resource-item h3 a {
     font-weight: bold;
 }
-
 .resource-item p {
     margin-top: 0;
     color: #666;
 }
-
 /* Simple category grid - minimal styling */
 .resource-grid {
     margin: 2em 0;
 }
-
 .resource-category {
     margin-bottom: 1.5em;
 }
-
 .resource-category h3 {
     margin-bottom: 0.3em;
     font-weight: normal;
 }
-
 .resource-category h3 a {
     font-weight: bold;
 }
-
 .resource-category p {
     margin: 0;
     color: #666;
 }
-
 .last-updated {
     color: #999;
     font-style: italic;
+}
+
+/* ============================================================
+   HOMEPAGE ONLY
+   Scoped to body.home so the article pages keep their current
+   heading styles. Remove the class from <body> to opt out.
+   ============================================================ */
+
+/* Name + flag */
+.home h1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1.4em;
+    font-family: var(--mono);
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--navy);
+}
+.home h1 strong {
+    font-weight: inherit;
+}
+.home .flag {
+    height: 0.85em;      /* em, so it tracks the name at any size */
+    width: auto;
+    display: block;
+    flex: none;
+    border-radius: 1px;
+}
+
+/* Section headers with the brick square */
+.home h2 {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-top: 0;
+    margin-bottom: 26px;
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #333;
+}
+.home h2::before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    background: var(--brick);
+    flex: none;
+}
+
+/* Small mono sub-labels */
+.home h3 {
+    margin-top: 38px;
+    margin-bottom: 14px;
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+.home h3:first-of-type {
+    margin-top: 0;
+}
+
+/* Portfolio list: no bullets, hairline down the left */
+.home ul.indent-list {
+    list-style: none;
+    margin: 1.4em 0 1.5em 14px;
+    padding: 2px 0 2px 22px;
+    border-left: 1px solid var(--rule);
+}
+.home ul.indent-list li {
+    margin-bottom: 9px;
+}
+.home ul.indent-list li:last-child {
+    margin-bottom: 0;
+}
+
+/* Two-column writing lists */
+.home ul.cols {
+    list-style: none;
+    margin: 0 0 1.5em;
+    padding: 0;
+    columns: 2;
+    column-gap: 50px;
+}
+.home ul.cols li {
+    break-inside: avoid;
+    margin-bottom: 2px;
+}
+
+/* Connect links */
+.home .connect-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+    margin-top: 26px;
+    font-family: var(--mono);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 560px) {
+    .home h1 { font-size: 19px; }
+    .home ul.cols { columns: 1; }
+    .home ul.cols li { margin-bottom: 8px; }
 }
