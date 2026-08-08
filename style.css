@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@500;700&display=swap');
 
 :root {
-    --navy:  #132949;
-    --brick: #be533f;
+    --navy:  #0e2a6b;   /* the flag's own union navy */
+    --brick: #c52933;   /* the flag's own red */
     --muted: #717070;
     --rule:  #cdcbc9;
     --mono:  'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -191,6 +191,9 @@ hr {
 }
 
 /* Connect links */
+.home .connect-links a {
+    color: var(--navy);
+}
 .home .connect-links {
     display: flex;
     flex-wrap: wrap;
