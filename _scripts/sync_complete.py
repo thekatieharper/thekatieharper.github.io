@@ -5,14 +5,20 @@ Complete Website Sync from Notion
 - Auto-updates homepage Writing section
 - Handles external links with UTM tracking
 
-Usage:
-python3 sync_complete.py
+Run from the repository root (set NOTION_TOKEN in the environment first):
+    python3 _scripts/sync_complete.py
+
+This file lives in _scripts/ so the GitHub Pages Jekyll build does not
+publish it. Generated HTML is still written to the site root.
 """
 
 import os
 import requests
 import markdown2
 import re
+
+# Site files live in the repo root, one level above this script.
+SITE_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Configuration
 NOTION_TOKEN = os.environ.get('NOTION_TOKEN', '')
@@ -288,11 +294,12 @@ def generate_writing_section(items):
 def update_homepage(writing_html):
     """Update index.html with new Writing section"""
     
+    index_path = os.path.join(SITE_ROOT, 'index.html')
     try:
-        with open('index.html', 'r', encoding='utf-8') as f:
+        with open(index_path, 'r', encoding='utf-8') as f:
             content = f.read()
     except FileNotFoundError:
-        print("⚠️  index.html not found - make sure you're in the right directory")
+        print(f"⚠️  index.html not found in {SITE_ROOT}")
         return False
     
     # Replace everything between <h2>Writing</h2> and the next <hr>
@@ -306,7 +313,7 @@ def update_homepage(writing_html):
         print("⚠️  Could not find Writing section in index.html")
         return False
     
-    with open('index.html', 'w', encoding='utf-8') as f:
+    with open(index_path, 'w', encoding='utf-8') as f:
         f.write(new_content)
     
     return True
@@ -338,12 +345,12 @@ def main():
         # Generate HTML
         html = generate_post_html(item, content)
         
-        # Write to file
-        filename = f"{item['slug']}.html"
+        # Write to the site root, not next to this script
+        filename = os.path.join(SITE_ROOT, f"{item['slug']}.html")
         with open(filename, 'w', encoding='utf-8') as f:
             f.write(html)
         
-        print(f"     ✓ Generated {filename}")
+        print(f"     ✓ Generated {os.path.basename(filename)}")
     
     # Update homepage Writing section
     print(f"\n🏠 Updating homepage Writing section...")
@@ -355,7 +362,7 @@ def main():
         print("   ✗ Failed to update index.html")
     
     print(f"\n✅ Sync complete!")
-    print(f"\nNext steps:")
+    print(f"\nNext steps (from the repository root):")
     print(f"  git add *.html")
     print(f"  git commit -m \"Update writing from Notion\"")
     print(f"  git push")
